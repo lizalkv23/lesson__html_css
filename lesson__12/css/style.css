@@ -1,0 +1,132 @@
+body {
+   font-family: "inter", sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+.container {
+   max-width: 830px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+a {
+   display: inline-block;
+   color: inherit;
+}
+
+.wrapper {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+}
+
+.header {
+   background-color: rgba(172, 255, 47, 0);
+   opacity: 0.9;
+   position: fixed;
+   width: 100%;
+   z-index: 50;
+}
+
+.header__inner {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 25px 0px;
+
+}
+
+.header__btn {
+   font-family: "inter", sans-serif;
+   font-weight: 700;
+   line-height: 1.2;
+   letter-spacing: 2px;
+   color: beige;
+   text-transform: uppercase;
+   background-color: crimson;
+   padding: 10px 10px;
+   border: 1px solid transparent;
+   border-radius: 5px;
+   transition: all 0.8s;
+   margin-right: 10px;
+}
+
+.header__btn:hover {
+   filter: contrast(2);
+   text-decoration: underline;
+   transform: scale(1.1);
+}
+
+.header__link {
+   transition: all 1s;
+}
+
+.header__link:hover {
+   transform: scale(1.2);
+   filter: contrast(3);
+}
+
+
+.car {
+   min-height: 800px;
+   background: url(../img/1.jpg)50%/cover no-repeat;
+}
+
+.car__body {
+   position: relative;
+}
+
+.car__ferrari {
+   background: url("../img/d.png")0 0/contain no-repeat;
+   position: absolute;
+   width: 80%;
+   height: 300px;
+   left: 200px;
+   top: 550px;
+   filter: drop-shadow(8px 10px 5px rgb(149, 179, 17));
+   transition: all 6.0s;
+}
+
+.car:hover .car__ferrari {
+   transform: translatex(1300px);
+}
+
+.car__dolphin {
+   position: absolute;
+   background: url("../img/0.png") no-repeat;
+   background-size: contain;
+   width: 200px;
+   height: 100px;
+   top: 400px;
+   transition: all 2s;
+}
+
+.car__dolphin:hover {
+   opacity: 0;
+}
+
+.footer {
+   padding: 15px 0;
+   background: url("../img/57a35ce1407651565622cff0.png")0 0 /contain;
+}
+
+.footer__quote {
+   font-family: "inter", sans-serif;
+   font-weight: 700;
+   font-size: 30px;
+   text-transform: uppercase;
+   text-align: center;
+   position: relative;
+}
+
+.footer__quote::after {
+   content: "🌹";
+   width: 10%;
+   height: 10px;
+   position: absolute;
+}
+
+.footer__quote:hover::after {
+   filter: contrast(2);
+}

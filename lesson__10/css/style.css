@@ -1,0 +1,24 @@
+body{
+   font-family: "lato",sans-serif;
+   color:  #1E212C;
+}
+img{
+   max-width: 100%;
+}
+.container{
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.footer__inner{
+   color: #ffffff;
+}
+.footer-top{
+   background-color: #1E212C;
+}
+.footer-bottom{
+background-color: #1E212C;
+opacity: 0.98;
+min-height: 50px;
+}
