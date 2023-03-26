@@ -1,0 +1,221 @@
+/* ======== media======================== */
+@media (max-width: 1345px) {
+	body {
+		font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1345 - 320)));
+		line-height: calc(20px + (26 - 20) * ((100vw - 320px) / (1345 - 320)));
+	}
+
+	.title {
+		font-size: calc(30px + (65 - 30) * ((100vw - 320px) / (1345 - 320)));
+		line-height: calc(40px + (82 - 40) * ((100vw - 320px) / (1345 - 320)));
+	}
+
+	.fitness {
+		padding-bottom: 30px;
+	}
+
+	.fitness .about-us,
+	.what {
+		flex: 0 1 100%;
+		align-self: center;
+	}
+
+	.about-us__title,
+	.about-us__subtitle {
+		margin-bottom: 25px;
+		text-align: center;
+		align-self: center;
+		max-width: 412px;
+	}
+
+	.about-us__text {
+		max-width: 600px;
+		text-align: center;
+		/* align-self: center; */
+	}
+
+	.about-us__image {
+		margin: 0 auto 40px auto;
+	}
+
+	.about-us__text {
+		padding-bottom: 40px;
+	}
+
+	.what__title,
+	.what__subtitle {
+		padding: 0 15px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	.what__image {
+		margin: 0 auto;
+	}
+
+}
+
+@media (max-width: 1200px) {
+	.partners__inner {
+		column-gap: 40px;
+	}
+}
+
+@media (max-width: 1132px) {
+	.container {
+		max-width: 870px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	.start::after {
+		display: none;
+	}
+
+	.start::after {
+		width: 400px;
+		right: 50px;
+		bottom: -20%;
+	}
+
+	.block-start {
+		padding: 40px 0;
+		text-align: center;
+		flex: 1 1 100%;
+		justify-content: center;
+	}
+
+	.start__img {
+		margin: 0 auto;
+	}
+
+	.partners {
+		padding: 20px 0;
+	}
+
+	.partners__our {
+		flex: 1 0 100%;
+		text-align: center;
+	}
+
+	.partners__label {
+		flex: 1 1 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+}
+
+@media (max-width: 830px) {
+	.header {
+		position: relative;
+		padding-top: calc(15px + (30 - 15) * ((100vw - 320px) / (830 - 320)));
+		padding-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (830 - 320)));
+	}
+
+	.header__inner {
+		flex-direction: column;
+		row-gap: 40px;
+	}
+
+	.header__item-logo {
+		flex: 0 0 35px;
+	}
+
+	.header__logo {
+		line-height: 25px;
+	}
+
+	.container {
+		max-width: 620px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	.fitness__container {
+		max-width: 620px;
+	}
+
+	.start {
+		padding: 15px 0;
+	}
+
+	.start::before {
+		display: none;
+	}
+	.about-us__text p:not(:last-child) {
+		margin-bottom: 15px;
+	}
+	.about-us__text {
+		padding-bottom: 20px;
+	}
+	.fitness__inner{
+		flex-wrap: wrap;
+	}
+	.items--flex1{
+		flex: 1 1 100%;
+	}
+	.items--flex2{
+		flex: 1 1 100%;
+	}
+	.about-us__title,
+	.about-us__subtitle, .what__title,
+	.what__subtitle {
+margin:25px auto;
+	}
+}
+
+
+@media (max-width: 600px) {
+
+	.form__input {
+		flex: 1 1 100%;
+	}
+
+	.block-start {
+		padding: 20px 0;
+	}
+
+	.form__input,
+	.form__btn {
+		border-radius: 5px;
+	}
+
+	.form__btn {
+		flex: 1 1 100%;
+	}
+
+	.partners::before {
+		width: 80px;
+		height: 25%;
+	}
+
+
+}
+
+@media (max-width: 430px) {
+	.header__inner {
+		row-gap: 20px;
+	}
+
+	.header__items {
+		padding: 0 40px;
+		display: block;
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.actions {
+		flex-wrap: wrap-reverse;
+	}
+
+	.actions__reg {
+		max-width: 430px;
+		margin: 0 auto;
+	}
+
+	.actions__btn {
+		flex: 1 1 100%;
+		text-align: center;
+	}
+}
