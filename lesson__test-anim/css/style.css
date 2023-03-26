@@ -1,0 +1,120 @@
+.wrapper{
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+.animation {
+   position: relative;
+   background: url('../img/Jf.jpg') 0 0/ cover no-repeat;
+   width: 100%;
+   height: 100vh;
+}
+
+.animation__item--tree {
+   background: url('../img/tree2.png') no-repeat;
+   background-size: contain;
+   transition: all 2.5s ease-in 2s;
+   width: 80%;
+   height: 50%;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   opacity: 0;
+}
+
+.animation:hover .animation__item--tree {
+   transform: translate(150px, -50px);
+   opacity: 1;
+
+}
+
+.animation__item--nigth {
+   display: block;
+   background: url('../img/Eiffel-Tower.jpg')no-repeat;
+   background-size: cover;
+   position: absolute;
+   top: 50%;
+   right: 20%;
+   width: 120px;
+   height: 80px;
+   border-radius: 40%;
+   box-shadow: 1px 1px 1px rgb(213, 16, 154);
+   overflow: hidden;
+   transition: all 1.8s ease-in-out 1s;
+}
+.animation:hover .animation__item--nigth{
+   opacity: 0;
+}
+
+.animation__item--sun {
+   background: url('../img/eiffel-tower-in-paris-1.jpg')100% 100% no-repeat;
+   background-size: cover;
+   position: absolute;
+   opacity: 0;
+   width: 100%;
+   height: 100vh;
+   transition: all 3s ease-in-out 7s;
+}
+
+.animation:hover .animation__item--sun {
+   opacity: 1;
+   filter: contrast(1.5);
+}
+
+.animation__item--boy {
+   background: url('../img/boy.png') no-repeat;
+   background-size: contain;
+   transition: all 2.5s ease-in 2s;
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   right: 20%;
+   top: 70%;
+   opacity: 1;
+   transition: all 2s ease-in-out 1s;
+}
+
+.animation__item--boy::after {
+   display: block;
+   content: '';
+   background-color: antiquewhite;
+   border-radius: 50%;
+   box-shadow: 1px 1px 1px rgb(213, 16, 154);
+   width: 20px;
+   height: 10px;
+   left: 50px;
+   top: -25px;
+   position: absolute;
+   transition: all 0.2s;
+}
+
+.animation:hover .animation__item--boy {
+   opacity: 0;
+}
+.song{
+   position: absolute;
+   left: 5%;
+   top: 20%
+}
+.song__audio{
+   width: 120px;
+   height: 50px;
+   border: 2px solid rgb(63, 2, 54);
+   border-radius: 50%;
+   box-shadow:-2px -2px 4px rgb(163, 45, 231);
+}
+@media (max-width: 767px){
+   .animation{
+      background: url('../img/Jf.jpg') center/ cover no-repeat;
+   }
+   .animation:hover .animation__item--tree {
+      transform: translate(50px, -50px);
+   
+   }
+   .animation__item--nigth{
+      right: 80px;
+   }
+   .animation__item--sun{
+      background: url('../img/eiffel-tower-in-paris-1.jpg')center/cover no-repeat;
+   }
+}
