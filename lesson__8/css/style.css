@@ -1,0 +1,157 @@
+body {
+   font-family: lato, sans-serif;
+   font-weight: 400;
+   line-height: 25px;
+   color: #424551;
+}
+.container{
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.header {
+   margin-bottom: 50px;
+   min-height: 100px;
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+   opacity: 0.8;
+}
+.menu{
+   display: flex;
+   overflow: hidden;
+}
+.menu__list{
+   margin: auto;
+}
+.menu__link{
+   display: inline-block;
+}
+.info {
+   margin-bottom: 50px;
+}
+
+.info__title {
+   margin-bottom: 40px;
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+}
+.info__text p:not(:last-child){
+margin-bottom: 10px;}
+
+.learn{
+   margin-bottom: 50px;
+}
+.learn__title{
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 42px;
+   color: #1E212C;
+   margin-bottom: 25px;
+}
+
+.learn__list {
+   margin-bottom: 5px;
+   padding-left: 35px;
+   position: relative;
+}
+li:last-child{
+   margin-bottom: 0;
+}
+
+.learn__list::before {
+   content: "🦄";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 16px;
+   position: absolute;
+   left: 0;
+
+}
+
+.curator {
+   margin-bottom: 40px;
+}
+
+.curator__subtitle {
+   font-weight: 700;
+   line-height: 24px;
+   color: #1E212C;
+   text-transform: uppercase;
+}
+
+.curator__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 60px;
+   color: #1E212C;
+}
+
+.curator__characteristic {
+   font-size: 20px;
+   line-height: 30px;
+   margin-bottom: 30px;
+}
+
+.curator__advance {
+   margin-bottom: 30px;
+}
+
+.curator__list {
+   margin-bottom: 5px;
+}
+
+.curator__list:nth-child(1)::before {
+   content: "⭐";
+   padding-right: 8px;
+   width: 16px;
+   height: 16px;
+}
+
+.curator__list:nth-child(2)::before {
+   content: "🔥";
+   padding-right: 12px;
+   width: 16px;
+   height: 16px;
+}
+
+.curator__list:nth-child(3)::before {
+   content: "🦸";
+   padding-right: 8px;
+   width: 16px;
+   height: 16px;
+}
+
+.curator__text p::after {
+   content: "😸";
+   padding-left: 10px;
+}
+.footer {
+   max-width: 100%;
+   min-height: 100px;
+   background-color: rgb(196, 240, 211);
+}
+.footer__menu {
+   display: flex;
+}
+.footer__link{
+   display: inline-block;
+}
+.footer__link img{
+   transition: all 0.5s;
+margin-top: 10px;
+
+
+}
+.footer__link img:hover{
+   box-shadow: 2px 2px 5px #3cdc1c;
+   transform: scale(-1,1);
+}
+.footer__link img:active{
+filter: hue-rotate(90deg);
+}
+.footer__contacts li:not(:last-child){
+margin-right: 24px;
+}
