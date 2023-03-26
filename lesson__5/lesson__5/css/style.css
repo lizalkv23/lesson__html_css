@@ -1,0 +1,116 @@
+@font-face {
+   font-family: "furius";
+   src: url("../fonts/furius-2.woff2") format("woff2"), url("../fonts/furius-2.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+
+}
+
+@font-face {
+   font-family: "furius";
+   src: url("../fonts/furius-4.woff2") format("woff2"), url("../fonts/furius-4.woff") format("woff");
+   font-display: swap;
+   font-weight: 500;
+   font-style: italic;
+}
+
+
+@font-face {
+   font-family: "blacker";
+   src: url("../fonts/blacker-sans-pro-7.woff2") format("woff2"), url("../fonts/blacker-sans-pro-7.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+
+/* --------------------------------------- */
+body {
+   font-family: "furius", sans-serif;
+   font-weight: 400;
+   background: url(../img/belka.jpg) 50%/cover no-repeat fixed;
+
+}
+
+.header {
+   overflow: hidden;
+   background-color: rgba(99, 230, 118, 0.422);
+
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.header a {
+   display: block;
+}
+
+.header__item a {
+   font-family: "combo", sans-serif;
+   font-size: 20px;
+   color: rgba(0, 0, 0, 0.57);
+   padding: 10px 0;
+   text-transform: uppercase;
+}
+
+main {
+   background-color: rgba(27, 74, 74, 0.316);
+}
+
+.main__title,
+.main__subtitle {
+   font-family: "blacker";
+   font-weight: 700;
+   font-size: 30px;
+   padding: 25px 0;
+   text-align: center;
+   color: rgba(10, 11, 11, 0.867);
+   text-shadow: 5px 5px 2px rgb(23, 205, 10);
+}
+
+.main__subtitle {
+   font-size: 26px;
+   text-shadow: -4px 1px 1px rgba(65, 60, 173, 0.871);
+}
+
+.main__text {
+   line-height: 2;
+   text-align: justify;
+   font-size: 18px;
+   letter-spacing: 3px;
+   color: rgb(243, 243, 243);
+   text-shadow: 2px 5px 5px rgba(21, 21, 20, 0.673);
+}
+
+main span {
+   color: rgb(19, 15, 17);
+   font-size: 22px;
+   font-weight: 700;
+   text-decoration: underline;
+
+}
+
+.main__text-p {
+   text-decoration: line-through;
+   color: rgba(125, 6, 6, 0.779);
+}
+
+footer {
+   background-color: rgba(0, 255, 255, 0.173);
+}
+
+footer a {
+   display: block;
+}
+
+.phone {
+   font-family: furius, sans-serif;
+   font-weight: 500;
+   font-style: italic;
+   font-size: 30px;
+   padding: 15px 0;
+   color: black;
+   text-align: center;
+}
