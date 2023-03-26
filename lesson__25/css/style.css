@@ -1,0 +1,365 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+   background-color: transparent;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li,
+ol {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/* ================================================= */
+body {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.loaded body {
+   opacity: 1;
+   visibility: visible;
+}
+
+@font-face {
+   font-family: icons;
+   font-display: swap;
+   src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* .============================================================== */
+.lesson {
+   padding: 100px 0 100px;
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+
+.lesson::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 1;
+}
+
+.lesson__fullscreen {
+   position: relative;
+}
+
+.lesson__video {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   z-index: 0;
+}
+
+.lesson__inner {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.form__text {
+   position: relative;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 25px;
+   padding: 20px 10px 50px;
+}
+
+.form__title {
+   position: relative;
+   z-index: 2;
+   font-size: 50px;
+   line-height: 1.3;
+   font-weight: 900;
+   color: #fff;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 100%;
+   background-image: linear-gradient(180deg, rgba(226, 242, 10, 0.7) 21%, rgba(185, 10, 37, 0.9895308465182948) 100%);
+}
+
+.icon-massege::after {
+   content: "\e945";
+   font-family: icons;
+   font-size: 40px;
+   color: rgb(172, 212, 10);
+   transition: all 0.3s;
+   animation: flicker 2s infinite;
+}
+
+.icon-massege:hover:after {
+   filter: hue-rotate(90deg);
+   animation-play-state: paused;
+}
+
+
+@keyframes flicker {
+   100% {
+      text-shadow:
+         0 0 2px #fff,
+         0 0 4px #fff,
+         0 0 8px #fff,
+         0 0 15px #0fa,
+         0 0 30px rgb(12, 210, 144),
+         0 0 40px rgb(24, 154, 111),
+         0 0 70px rgb(18, 136, 97),
+         0 0 100px rgb(9, 65, 46);
+   }
+
+   50% {
+      text-shadow:
+         0 0 1px #fff,
+         0 0 2px #fff,
+         0 0 5px #fff,
+         0 0 11px #0fa,
+         0 0 20px #0fa,
+         0 0 30px #0fa,
+         0 0 55px #0fa,
+         0 0 80px #0fa;
+   }
+
+   0% {
+      text-shadow:
+         0 0 2px #fff,
+         0 0 4px #fff,
+         0 0 8px #fff,
+         0 0 15px #0fa,
+         0 0 30px rgb(12, 210, 144),
+         0 0 40px rgb(24, 154, 111),
+         0 0 70px rgb(18, 136, 97),
+         0 0 100px rgb(9, 65, 46);
+   }
+}
+
+.form {
+   position: relative;
+   z-index: 2;
+   overflow: hidden;
+   padding: 30px;
+   max-width: 800px;
+   min-height: 100px;
+   margin: 0 auto;
+   transition: all 0.8s;
+}
+
+.form__action {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.active {
+   opacity: 1;
+   visibility: visible;
+   transition: all 0.8s;
+}
+
+.form__input {
+   position: relative;
+   flex: 1 1 auto;
+   height: 36px;
+   padding: 10px;
+   border-radius: 4px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 1.8px;
+   background-color: rgba(255, 255, 255, 0.258);
+}
+
+.form__remained {
+   font-size: 17px;
+   width: 100%;
+   text-shadow: 2px 1px 1px rgb(0, 0, 0);
+   color: rgb(93, 89, 89);
+   font-weight: 500;
+   font-style: italic;
+   position: absolute;
+   bottom: 0;
+   left: 3%;
+}
+
+.form__input::placeholder {
+   color: rgba(36, 43, 31, 0.671);
+}
+
+.form__input:focus {
+   background-color: rgba(255, 255, 255, 0.796);
+}
+
+.form__btn {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 900;
+   padding: 10px 15px;
+   color: #fff;
+   line-height: 1.2;
+   letter-spacing: 3px;
+   background: linear-gradient(143deg, rgb(180, 240, 2)0%, rgba(153, 179, 5, 0.825) 30%, rgb(37, 62, 2) 80%);
+   transition: color 0.5s;
+   border-radius: 4px;
+}
+
+.form__btn:hover {
+   color: rgb(16, 16, 13);
+}
+
+.lesson__decor {
+   z-index: 1;
+}
+
+.lesson__item--1 {
+   position: absolute;
+   background: url('../img/snow.png')center/contain no-repeat;
+   width: 50px;
+   height: 50px;
+   left: 20%;
+   top: 15%;
+}
+
+.lesson__item--2 {
+   position: absolute;
+   background: url('../img/snow.png')center/contain no-repeat;
+   width: 25px;
+   height: 30px;
+   left: 10%;
+   bottom: 28%;
+}
+
+.lesson__item--3 {
+   position: absolute;
+   background: url('../img/snow.png')center/contain no-repeat;
+   width: 30px;
+   height: 40px;
+   right: 20%;
+   top: 15%;
+}
+
+.lesson__item--4 {
+   position: absolute;
+   background: url('../img/snow.png')center/contain no-repeat;
+   width: 45px;
+   height: 40px;
+   right: 10%;
+   top: 58%;
+}
+
+.lesson__item--5 {
+   position: absolute;
+   background: url('../img/snow.png')center/contain no-repeat;
+   width: 45px;
+   height: 40px;
+   left: 18%;
+   top: 38%;
+}
+
+@media (max-width: 767.98px) {
+   .lesson {
+      padding-top: 30px;
+   }
+}
+
+@media (max-width: 500px) {
+   .form__title {
+      font-size: 35px;
+   }
+
+   .icon-massege::after {
+      font-size: 30px;
+   }
+}

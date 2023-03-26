@@ -1,0 +1,239 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li,
+ol {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/* ========================================= */
+.wrapper {
+   position: relative;
+   min-height: 100%;
+   background: linear-gradient(180deg, rgba(143, 6, 27, 0.988)0%, rgba(14, 14, 14, 0.938) 40%, rgb(0, 0, 0) 71%);
+   padding-bottom: 50px;
+}
+
+.block {
+   font-size: 2.5rem;
+   font-weight: 900;
+   text-align: center;
+   padding: 100px;
+   line-height: 150%;
+   max-width: 700px;
+   margin: 0 auto;
+   animation: border 8s linear infinite;
+}
+
+@keyframes border {
+   0% {
+      text-shadow: 1px 1px 1px rgb(73, 243, 31);
+      opacity: 1;
+   }
+
+   50% {
+      text-shadow: 3px 3px 2px rgb(113, 231, 22);
+      opacity: 0.4;
+   }
+
+   100% {
+      text-shadow: 1px 1px 1px rgb(26, 106, 12);
+      opacity: 1;
+   }
+}
+
+.list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.menu__link {
+   display: flex;
+   color: rgb(243, 239, 239);
+   text-shadow: 2px 2px 1px #000;
+   max-width: 10rem;
+   margin: 0 auto;
+   justify-content: center;
+   font-size: 1.8rem;
+   padding: 20px 40px;
+   font-weight: 900;
+   letter-spacing: 3px;
+   border-radius: 0.5rem;
+   border: 2px solid rgba(253, 249, 249, 0.349);
+   margin-bottom: 50px;
+   transition: all 0.5s;
+   background-image: linear-gradient(143deg,rgba(17, 16, 16, 0.27)10%, rgb(94, 245, 155) 40%, rgb(13, 14, 13) 80%);
+   animation: blick 8s linear infinite;
+}
+@keyframes blick {
+   0%{
+      background-size: 100%;
+   }
+   20%{
+      background-size: 150%;
+   }
+   40%{
+      background-size: 200%;
+   }
+   60%{
+      background-size: 300%;
+   }
+   80%{
+      background-size: 150%;
+   }
+   100%{
+      background-size: 100%;
+   }
+}
+
+.menu__link:hover {
+   color: rgb(20, 43, 4);
+   text-shadow: 2px 2px 1px rgb(248, 247, 247);
+   animation-play-state: paused;
+}
+
+.link__js {
+   color: rgb(193, 241, 115);
+   font-size: 1.7rem;
+   text-align: center;
+   line-height: 1.5;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
+.menu__link:not(:last-child) {
+   margin-bottom: 50px;
+}
+
+.list__item:hover .link__js {
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 100%;
+   background-image: linear-gradient(143deg, rgb(95, 231, 120)20%, rgb(70, 199, 231) 30%, rgb(54, 12, 96) 60%);
+}
+
+.items-menu {
+   font-size: 1.2rem;
+   line-height: 120%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 50px;
+   height: 40px;
+   text-align: center;
+   border-radius: 0.3rem;
+   background-color: rgba(255, 127, 80, 0.762);
+}
+
+.slider p {
+   font-size: 2rem;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   padding: 1.2rem;
+}
+
+.slider p:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.slider__link {
+   display: block;
+   max-width: 650px;
+   margin: 0 auto;
+   color: rgb(239, 241, 236);
+   text-shadow: 1px 2px 2px #000;
+   font-size: 2rem;
+   text-align: center;
+   line-height: 150%;
+   padding: 1rem;
+   transition: all 0.5s;
+}
+
+.slider__link:hover {
+   transform: scale(1.04);
+   box-shadow: 2px 5px 1px 2px rgba(241, 241, 241, 0.705);
+
+}
